@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("assets/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-MediumItalic";
+  src: url("assets/fonts/Poppins/Poppins-MediumItalic.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("assets/fonts/Poppins/Poppins-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+  font-display: swap;
+}
+/* Poppins */
+
+:root {
+  --black: #000000;
+
+  --blue_main: #11438f;
+  --blue_primary: #163E73;
+  --blue_secondary: #1E4275;
+  --blue_dark: #1B293D;
+  --blue_light: #3D6093;
+
+  --gray-dark: #a4a4a4;
+  --gray-primary: #f2f2f2;
+  --gray-secondary: #e1e1e1;
+  --gray-lightest: #0000008a;
+
+  --gray-hover: #0000008a;
+  --gray50: #f2f2f2;
+  --gray100: #d3d3d3;
+  --gray200: #a4a4a4;
+  --gray250: #8f8c8c;
+  --gray300: #7a7a7a;
+  --gray400: #616161;
+  --gray500: #666666;
+  --gray600: #4b5565;
+
+  --white: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.Poppins-Bold {
+  font-family: "Poppins-Bold" !important;
+}
+.Poppins-Book {
+  font-family: "Poppins-Book" !important;
+}
+.Poppins-Thin {
+  font-family: "Poppins-Thin" !important;
+}
+.Poppins-Light {
+  font-family: "Poppins-Lighht" !important;
+}
+.Poppins-Black {
+  font-family: "Poppins-Black" !important;
+}
+.Poppins-Bold {
+  font-family: "Poppins-Bold" !important;
+}
+.Poppins-SemiBold {
+  font-family: "Poppins-SemiBold" !important;
+}
+.PoppinsCondensed-Medium {
+  font-family: "PoppinsCondensed-Medium" !important;
+}
+.PoppinsCondensed-Regular {
+  font-family: "PoppinsCondensed-Regular" !important;
+}
+.Poppins-Italic {
+  font-family: "Poppins-Italic" !important;
+}
+.Poppins-Medium {
+  font-family: "Poppins-Medium" !important;
+}
+.Poppins-Regular {
+  font-family: "Poppins-Regular" !important;
+}
+.Poppins-Medium-Italic {
+  font-family: "Poppins-Medium-Italic" !important;
+}
+.Poppins-Light {
+  font-family: "Poppins-Light" !important;
+}
+.Poppins-Extra-Light {
+  font-family: "Poppins-Extra-Light" !important;
+}
+.Poppins-Thin {
+  font-family: "Poppins-Thin" !important;
+}
+
+.side-bar-scroll:-webkit-scrollbar {
+  width: 7px;
+}
+
+body {
+  font-family: "Poppins-Light" !important;
+  color: #000000 !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--gray100);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--gray200);
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: white;
+}
+*::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+.no-scroll::-webkit-scrollbar-track {
+  display: none;
+}
+.no-scroll::-webkit-scrollbar-thumb {
+  display: none;
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  color: var(--blue_primary);
+}
+
+.padding-0 {
+  padding: 0px;
+}
+.padding-5 {
+  padding: 5px;
+}
+.padding-10 {
+  padding: 10px;
+}
+.padding-20 {
+  padding: 20px;
+}
+
+.blue-primary {
+  color: var(--blue_primary);
+}
+.blue-secondary {
+  color: var(--blue_secondary);
+}
+
+
+.text-black {
+  color: var(--black) !important;
+}
+.gray-hover {
+  color: var(--gray-hover);
+}
+.gray50 {
+  color: var(--gray50);
+}
+.gray100 {
+  color: var(--gray100);
+}
+.gray200 {
+  color: var(--gray200);
+}
+.gray250 {
+  color: var(--gray250);
+}
+.gray300 {
+  color: var(--gray300);
+}
+.gray400 {
+  color: var(--gray400);
+}
+.gray500 {
+  color: var(--gray500);
+}
+.text-lightest-gray {
+  color: var(--gray-lightest);
+}
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.padding-inline {
+  padding-inline: 50px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.pointer {
+  cursor: pointer;
+}
+.underline {
+  text-decoration: underline;
+}
+.gray-scale {
+  filter: grayscale(100);
+}
+.gray-scale:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+.header {
+  padding-block: 30px;
+  padding-inline: 22px;
+  background-color: lightblue;
+}
+
+.banner {
+  height: 250px;
+  width: 100%;
+  background-color: aqua;
+}
+
+/* footer start */
+.footer-list {
+  color: var(--gray200);
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  transition: 0.5s;
+}
+.footer-list:hover {
+  color: var(--blue_primary);
+}
+.social_images img {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.social_images img:hover {
+  filter: grayscale(0);
+}
+footer .list-divider {
+  width: 1px;
+  background-color: #898787;
+  height: 18px;
+}
+footer .hitech {
+  color: var(--gray200);
+}
+footer .hitech:hover {
+  color: var(--blue_primary);
+  transition: 0.5s;
+}
+.footer-main {
+  margin-top: 500px;
+  background-color: var(--white);
+  padding-block: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+  color: var(--blue_secondary);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.footer-icons-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  margin-top: 42px;
+  font-size: 16px;
+  color: var(--blue_primary);
+}
+
+.footer-social-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  color: var(--blue_primary);
+  margin-top: 22px;
+}
+/* footer end */

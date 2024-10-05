@@ -1,0 +1,38 @@
+$blue_main: #11438f;
+$blue_primary: #163E73;
+$blue_secondary: #1E4275;
+$blue_dark: #1B293D;
+$blue_light: #3D6093;
+
+$gray50: #f2f2f2;
+$gray100: #d3d3d3;
+$gray200: #a4a4a4;
+$gray300: #7a7a7a;
+$gray400: #616161;
+$gray500: #666666 ;
+$gray600: #4b5565;
+
+
+
+$white: #FFFFFF;
+
+// ==============================|| JAVASCRIPT ||============================== //
+
+:export {
+
+  blue_main: $blue_main;
+  blue_primary:$blue_primary;
+  blue_secondary:$blue_secondary;
+  blue_dark: $blue_dark;
+  blue_light: $blue_light;
+
+  gray50: $gray50;
+  gray100: $gray100;
+  gray200: $gray200;
+  gray300: $gray300;
+  gray400: $gray400;
+  gray500: $gray500;
+  gray600: $gray600;
+
+  white: $white;
+}
