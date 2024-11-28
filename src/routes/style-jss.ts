@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme: any) => ({
     marginBottom: 10,
   },
   breadcrumb_head: {
-    color: "#000000" || "#000",
+    color: "#000000",
     fontFamily: "Poppins-Regular",
     fontSize: 34,
     fontWeight: "normal",
@@ -68,6 +68,9 @@ const useStyles = makeStyles((theme: any) => ({
 
   main_layout_padding: {
     padding: "15px 100px 0px 100px",
+  },
+  content_padding: {
+    padding: "20px",
   },
 
   admin_layout_padding: {

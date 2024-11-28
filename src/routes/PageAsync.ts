@@ -11,5 +11,7 @@ export const Login = Loadable(lazy(() => import("views/Web/Login")));
 
 export const Dashboard = Loadable(lazy(() => import("views/Admin/Dashboard")));
 export const Appointments = Loadable(lazy(() => import("views/Admin/Appointments")));
-export const HealthRecord = Loadable(lazy(() => import("views/Admin/HealthRecord")));
-export const CreateHealthRecord = Loadable(lazy(() => import("views/Admin/CreateHealthRecord")));
+export const PateintDetails = Loadable(lazy(() => import("views/Admin/PateintDetails")));
+export const AppointmentDetails = Loadable(lazy(() => import("views/Admin/AppointmentDetails")));
+export const Doctors = Loadable(lazy(() => import("views/Admin/Doctors")));
+export const DoctorsDetails = Loadable(lazy(() => import("views/Admin/DoctorsDetails")));

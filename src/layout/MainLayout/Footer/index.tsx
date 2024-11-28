@@ -37,15 +37,8 @@ export default function Footer({
         <div>
           <div style={{ marginBottom: 12, marginLeft: 10 }}>
             <img src={logo} alt="Logo" />
-
-            <h4 style={{ color: "white" }} className="">
-              Get the H-cloud doctors app
-            </h4>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <img src={google_play} alt="Google Play" />
-            <img src={app_store} alt="App Store" />
-          </div>
+         
         </div>
 
         <div
@@ -89,18 +82,6 @@ export default function Footer({
             </div>
           </div>
 
-          <div>
-            <h4 className="Poppins-Bold">Contact</h4>
-            <div style={links_container}>
-              <Link style={{ color: "#C2DAFF", fontSize: 14 }} to={"/pharmacy"}>
-                Talk to support
-              </Link>
-              <Link style={{ color: "#C2DAFF", fontSize: 14 }} to={"/clinic"}>
-                Questions? <br />
-                Give us a call and let us <br /> handle everything for you!
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
 

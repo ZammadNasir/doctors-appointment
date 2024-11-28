@@ -25,7 +25,7 @@ export default function SelectField(props: any) {
     readOnly,
     disableClearable,
     fullWidth,
-    width
+    width,
   } = props;
   return (
     <form
@@ -37,14 +37,15 @@ export default function SelectField(props: any) {
     >
       {input_label && (
         <label
+          style={{ fontSize: 14, paddingLeft: 12, color: "black" }}
           className={classNames(
             classes.input_label_style,
-            "RobotoCondensed-Regular",
+            "Poppins-Regular",
             error && classes.color_red
           )}
         >
-          {input_label}
-          {required ? <span style={{ color: "red" }}> *</span> : ""}
+          {input_label ?? ""}
+          {required && !value ? <span style={{ color: "red" }}> *</span> : ""}
         </label>
       )}
       <Autocomplete
@@ -66,7 +67,7 @@ export default function SelectField(props: any) {
             sx={{
               "& ul": {
                 "& li": {
-                  fontFamily: "Roboto-Regular",
+                  fontFamily: "Poppins-Regular",
                   fontSize: 16,
                   fontWeight: "normal",
                   lineHeight: "normal",
@@ -105,7 +106,7 @@ export default function SelectField(props: any) {
             inputProps={{
               ...params.inputProps,
               style: {
-                fontFamily: "Roboto-Medium",
+                fontFamily: "Poppins-Regular",
                 fontSize: 16,
                 fontWeight: "normal",
                 lineHeight: "normal",

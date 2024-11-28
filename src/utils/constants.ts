@@ -43,3 +43,15 @@ export const languages = [
     flag: flagRu,
   },
 ] as any;
+
+
+export const statuses = [
+  {
+      label: "Active",
+      value: true,
+  },
+  {
+      label: "Inactive",
+      value: false,
+  },
+]

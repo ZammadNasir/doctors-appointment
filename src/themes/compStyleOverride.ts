@@ -111,7 +111,7 @@ export default function componentStyleOverrides(theme: any) {
     MuiCardHeader: {
       styleOverrides: {
         root: {
-          color: theme.white,
+          color: "#fff",
           background: theme.blue_primary,
           padding: 8,
         },
@@ -414,6 +414,51 @@ export default function componentStyleOverrides(theme: any) {
           borderRadius: 26 / 2,
           backgroundColor: "#e4e4e4",
           opacity: 1,
+        },
+      },
+    },
+    MuiPickersDay: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Poppins-Regular",
+          "&.Mui-selected": {
+            backgroundColor: "#1976d2",
+            color: "#ffffff",
+          },
+          "&:hover": {
+            backgroundColor: "#f5f5f5",
+          },
+        },
+      },
+    },
+    MuiPickersCalendarHeader: {
+      styleOverrides: {
+        switchViewButton: {
+          color: "#000",
+        },
+        label: {
+          fontFamily: "Poppins-Regular",
+          color: "#000",
+        },
+      },
+    },
+    MuiPickersYear: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Poppins-Regular",
+          "&.Mui-selected": {
+            color: "#1976d2",
+          },
+        },
+      },
+    },
+    MuiPickersMonth: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Poppins-Regular",
+          "&.Mui-selected": {
+            color: "#1976d2",
+          },
         },
       },
     },

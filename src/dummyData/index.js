@@ -1,0 +1,26 @@
+export const doctors_data = [
+    {
+      doctorid: 1,
+      doctorname: "Dr. John Doe",
+      medicalspecialty: "Cardiology",
+      hospitalaffiliation: "St. Mary's Hospital",
+      phonenumber: "123-456-7890",
+      availability: "Monday-Friday, 9 AM - 5 PM",
+      appointmentduration: "30 minutes",
+      experience: "10 years",
+      "Patient Reviews or Ratings": "4.5 stars",
+      is_active: true,
+    },
+    {
+      doctorid: 2,
+      doctorname: "Dr. Jane Smith",
+      medicalspecialty: "Pediatrics",
+      hospitalaffiliation: "Children's Hospital",
+      phonenumber: "987-654-3210",
+      availability: "Tuesday-Thursday, 2 PM - 8 PM",
+      appointmentduration: "45 minutes",
+      experience: "5 years",
+      "Patient Reviews or Ratings": "4.8 stars",
+      is_active: false,
+    },
+  ];

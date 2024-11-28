@@ -13,6 +13,7 @@ interface CustomTableProps {
   rows: any[];
   rowsPerPageOptions?: number[];
   title?: string;
+  onRowClick?: any;
 }
 
 export default function CustomDataTable({
@@ -20,6 +21,7 @@ export default function CustomDataTable({
   rows,
   rowsPerPageOptions = [10, 25, 100],
   title = "",
+  onRowClick = ()=> {},
 }: CustomTableProps) {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(rowsPerPageOptions[0]);
@@ -34,6 +36,10 @@ export default function CustomDataTable({
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+  const handle_row_click = (row: any) => {
+    onRowClick(row)
+  }
 
   return (
     <Paper
@@ -64,7 +70,7 @@ export default function CustomDataTable({
               rows
                 ?.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 ?.map((row, rowIndex) => (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={rowIndex}>
+                  <TableRow onClick={()=>handle_row_click(row)} hover role="checkbox" tabIndex={-1} key={rowIndex}>
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (

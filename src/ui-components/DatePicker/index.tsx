@@ -7,7 +7,7 @@ import moment from "moment";
 interface Props {
   value?: any;
   maxDate?: moment.Moment | null;
-  variant: 'standard' | 'outlined';
+  variant: "standard" | "outlined";
   disabled?: boolean;
   showIcon?: boolean;
   classes?: any;
@@ -19,13 +19,12 @@ interface Props {
   onChange?: (date: any) => void;
   handleDateChange?: (date: any) => void;
   show_icon?: Boolean;
-  label:string;
+  label?: string;
   style?: any;
 }
 
 // export default function DatePicker(props: Props) {
-  const DatePicker: React.FC<Props> = (props) => {
-
+const DatePicker: React.FC<Props> = (props) => {
   const {
     classes,
     input_label,
@@ -38,13 +37,11 @@ interface Props {
     onChange,
     show_icon = false,
     maxDate,
-    variant="standard",
+    variant = "standard",
     label,
-    style
+    style,
   } = props;
 
-
-  
   return (
     <form
       autoComplete="off"
@@ -58,15 +55,14 @@ interface Props {
     >
       {input_label && (
         <label
+          style={{ fontSize: 14, paddingLeft: 12, color: "black" }}
           className={classNames(
             classes.input_label_style,
-            "Poppins-Regular",
             error && classes.color_red
           )}
-          style={{ paddingBottom: 3 }}
         >
-          {input_label}
-          {required && <span style={{ color: "#0078AE" }}> *</span>}
+          {input_label ?? ""}
+          {required && !value ? <span style={{ color: "red" }}> *</span> : ""}
         </label>
       )}
 
@@ -103,6 +99,6 @@ interface Props {
       />
     </form>
   );
-}
+};
 
-export default DatePicker
+export default DatePicker;

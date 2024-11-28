@@ -12,29 +12,22 @@ export default function CreateToolTip() {
   return (
     <div>
       <List>
-        <Link to="/admin/create/patients">
+        <Link to="/admin/appointments/details">
           <ListItem>
-            <ListItemButton selected={pathname === "/admin/create/patients"}>
-              <ListItemText>Patients</ListItemText>
+            <ListItemButton selected={pathname === "/admin/appointments/details"}>
+              <ListItemText>Appointment</ListItemText>
             </ListItemButton>
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/admin/create/invoice">
+        <Link to="/admin/doctor/details/">
           <ListItem>
-            <ListItemButton selected={pathname === "/admin/create/invoice"}>
-              <ListItemText>Invoice</ListItemText>
+            <ListItemButton selected={pathname === "/admin/doctor/details"}>
+              <ListItemText>Doctor</ListItemText>
             </ListItemButton>
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/admin/create/health-record">
-          <ListItem>
-            <ListItemButton selected={pathname === "/admin/create/health-record"}>
-              <ListItemText>Health Record</ListItemText>
-            </ListItemButton>
-          </ListItem>
-        </Link>
       </List>
     </div>
   );

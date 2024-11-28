@@ -1,5 +1,6 @@
 import AdminLayout from "layout/AdminLayout";
-import { Appointments, CreateHealthRecord, Dashboard, HealthRecord } from "./PageAsync";
+import { Appointments, AppointmentDetails, Dashboard, PateintDetails, DoctorsDetails } from "./PageAsync";
+import Doctors from "views/Admin/Doctors";
 // ==============================|| MAIN ROUTING ||============================== //
 
 // export default AuthenticationRoutes;
@@ -18,12 +19,20 @@ export function AuthenticationRoutes({ classes }: any) {
         element: <Appointments classes={classes} />,
       },
       {
-        path: "/admin/health-records",
-        element: <HealthRecord classes={classes} />,
+        path: "/admin/appointments/details/:id?",
+        element: <AppointmentDetails classes={classes} />,
       },
       {
-        path: "/admin/create/health-record/:id?",
-        element: <CreateHealthRecord classes={classes} />,
+        path: "/admin/pateint/details/:id?",
+        element: <PateintDetails classes={classes} />,
+      },
+      {
+        path: "/admin/doctors",
+        element: <Doctors classes={classes} />,
+      },
+      {
+        path: "/admin/doctor/details/:id?",
+        element: <DoctorsDetails classes={classes} />,
       },
     ],
   };

@@ -58,20 +58,9 @@ export default function Header({
           <Link style={{ color: "black" }} to={"/admin/appointments"}>
             Appointments
           </Link>
-          <Link style={{ color: "black" }} to={"/admin/health-records"}>
-            Health Records
+          <Link style={{ color: "black" }} to={"/admin/doctors"}>
+            Doctors
           </Link>
-          <Link style={{ color: "black" }} to={"/admin/inventory"}>
-            Inventory
-          </Link>
-          <CustomToolTip
-            title={<UserToolTip />}
-            width={200}
-            height={"auto"}
-            show_arrow={false}
-          >
-            More
-          </CustomToolTip>
         </div>
 
         <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
@@ -98,28 +87,6 @@ export default function Header({
               </div>
             </div>
           </CustomToolTip>
-
-          <div
-            style={{
-              display: "flex",
-              border: "1px solid lightgrey",
-              gap: ".5rem",
-              alignItems: "center",
-              paddingInline: 4,
-              paddingBlock: 4,
-            }}
-          >
-            <Search style={{ color: "gray", cursor: "pointer" }} />
-            <input
-              style={{ border: "none", outline: "none" }}
-              placeholder="Search"
-            />
-          </div>
-
-          <Notifications
-            style={{ cursor: "pointer" }}
-            onClick={() => navigate("/admin/notifications")}
-          />
 
           <div style={{ display: "flex" }}>
             <div>
